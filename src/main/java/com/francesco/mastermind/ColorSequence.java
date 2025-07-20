@@ -75,7 +75,7 @@ public class ColorSequence extends Sequence {
 
     public static ColorSequence getRandomColorSequence() {
         RandomGenerator rnd = RandomGenerator.getDefault();
-        Color[] allColors = Color.values() ;
+        Color[] allColors = Color.values();
         ColorSequence sequence = new ColorSequence();
         for (int i = 0; i < ColorSequence.SEQUENCE_LENGTH; i++) {
             sequence.setColor(allColors[rnd.nextInt(0, allColors.length)], i);

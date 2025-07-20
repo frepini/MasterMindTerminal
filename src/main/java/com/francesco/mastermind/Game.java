@@ -6,6 +6,7 @@ import java.util.List;
 public class Game {
     final private ColorSequence correct;
     final private List<Attempt> attempts;
+    private int count;
 
     public Game() {
         this.correct = ColorSequence.getRandomColorSequence();
