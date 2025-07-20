@@ -8,6 +8,10 @@ public class Game {
     final private List<Attempt> attempts;
     private int count;
 
+    public int getCount() {
+        return count;
+    }
+
     public Game() {
         this.correct = ColorSequence.getRandomColorSequence();
         attempts = new ArrayList<>();
